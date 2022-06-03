@@ -12,8 +12,11 @@
     "check:lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "prettier --write .",
     "husky:check-all": "yarn check:format && yarn check:lint && ypes && yarn build",
-    "test:jest": "jest --watch --verbose",
-    "test:cypress": "cypress open"
+    "jest:watch": "jest --watch --verbose",
+    "jest:test": "jest --verbose",
+    "jest:coverage": "jest --verbose --coverage",
+    "cypress:test": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@commitlint/cli": "^17.0.2",
