@@ -1,0 +1,11 @@
+node_modules
+yarn.lock
+package-lock.json
+public
+dist
+.next
+commitlint.config.js
+next.config.js
+cypress/
+cypress.config.ts
+jest.config.js
