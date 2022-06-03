@@ -27,15 +27,6 @@ yarn check:lint ||
   false;
 )
 
-# Check Tsconfig
-echo "${info}Testing Typing${reset}."
-yarn check:types ||
-(
-  echo "${error}ERROR:${reset} Type check failed."
-  echo "Make the changes listed above, add changes and try again."
-  false;
-)
-
 # If all checks passess, build
 echo "${info}Trying to build${reset}."
 
